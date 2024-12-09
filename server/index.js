@@ -11,7 +11,7 @@ app.use(cors());
 dotenv.config();
 
 
-const URI = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@postitcluster.qld0q.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=PostITCluster`
+const URI = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@postitcluster.hldt0.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=PostITCluster`
 mongoose.connect(URI);
 app.listen(process.env.PORT, () => {
    console.log("You are connected");
